@@ -1,0 +1,165 @@
+/* Grundlegende Typografie und Layout */
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f2f5; /* Heller Hintergrund */
+color: #333;
+}
+.container {
+max-width: 700px;
+margin: 40px auto;
+background: #ffffff;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+/* Header und User Info */
+header {
+border-bottom: 1px solid #e5e5e5;
+padding-bottom: 15px;
+margin-bottom: 20px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+h1 {
+color: #075e54; /* WhatsApp/Signal Farbe */
+font-size: 1.8rem;
+margin: 0;
+}
+.user-info span {
+color: #7f8c8d;
+font-size: 0.9rem;
+}
+#my-id {
+font-weight: 600;
+color: #25d366;
+}
+/* Sektionen */
+h2, h3 {
+color: #34495e;
+font-size: 1.2rem;
+margin-top: 0;
+margin-bottom: 15px;
+border-left: 4px solid #3498db;
+padding-left: 10px;
+}
+hr {
+border: 0;
+border-top: 1px solid #ecf0f1;
+margin: 20px 0;
+}
+/* Input und Buttons */
+.input-row, .button-row {
+display: flex;
+gap: 10px;
+margin-bottom: 15px;
+}
+input[type="text"] {
+flex-grow: 1;
+padding: 12px;
+border: 1px solid #bdc3c7;
+border-radius: 6px;
+}
+.primary-btn, .secondary-btn {
+padding: 12px 20px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+font-weight: 600;
+transition: background-color 0.3s;
+}
+.primary-btn {
+background-color: #25d366; /* Grün */
+color: white;
+}
+.secondary-btn {
+background-color: #3498db; /* Blau */
+color: white;
+}
+.primary-btn:hover:not(:disabled) { background-color: #1e8449; }
+.secondary-btn:hover:not(:disabled) { background-color: #2980b9; }
+button:disabled {
+background-color: #bdc3c7 !important;
+cursor: not-allowed;
+}
+/* CHAT-Bereich */
+.chat-header {
+margin-bottom: 5px;
+}
+.group-title {
+cursor: pointer;
+text-decoration: underline;
+color: #16a085;
+font-weight: 600;
+}
+.chat-window {
+height: 400px;
+border: 1px solid #e5e5e5;
+overflow-y: scroll;
+padding: 15px;
+margin-bottom: 15px;
+background-color: #ffffff;
+border-radius: 6px;
+}
+.message {
+margin-bottom: 8px;
+padding: 10px 14px;
+border-radius: 18px;
+max-width: 70%;
+font-size: 0.95rem;
+box-shadow: 0 1px 1px rgba(0,0,0,0.08);
+}
+.me {
+background-color: #dcf8c6; /* Hellgrün (Gesendet) */
+color: #000;
+margin-left: auto;
+text-align: right;
+border-bottom-right-radius: 2px;
+}
+.partner {
+background-color: #fcfcfc; /* Weiß/Grau (Empfangen) */
+color: #000;
+border: 1px solid #eee;
+border-bottom-left-radius: 2px;
+}
+.system {
+font-style: italic;
+color: #95a5a6;
+text-align: center;
+margin: 15px auto;
+font-size: 0.8rem;
+max-width: 100%;
+padding: 0;
+border-radius: 0;
+box-shadow: none;
+}
+/* Status und Listen */
+.info-list-dropdown {
+border: 1px solid #ecf0f1;
+padding: 15px;
+margin-top: 5px;
+margin-bottom: 15px;
+display: none;
+border-radius: 6px;
+background-color: #f9f9f9;
+}
+.member-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 5px;
+}
+/* Senden Input-Feld */
+.input-send-group {
+display: flex;
+gap: 10px;
+}
+#message-input {
+flex-grow: 1;
+}
+.input-send-group button {
+flex-shrink: 0;
+background-color: #3498db;
+}
